@@ -7,10 +7,10 @@ class Devhub < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/moinsen-dev/devhub/releases/download/v0.4.0/devhub-aarch64-apple-darwin.tar.gz"
-      sha256 "021402d3cf78849bba97e2b796795697a05f05c9cd2f440545065c28e959a9a3"
+      sha256 "836cd426a98f83805349ce313081f63ad33aba0b316cf42267a142395bea18c7"
     else
       url "https://github.com/moinsen-dev/devhub/releases/download/v0.4.0/devhub-x86_64-apple-darwin.tar.gz"
-      sha256 "2285772a567413bf84f812740ca94abedaf21544ece5c1f0dc85b805a9a97c65"
+      sha256 "48e347d1fba6585767bd48dc09079d51db1fa19cd7dd0f1022fdadd407b01583"
     end
   end
 
