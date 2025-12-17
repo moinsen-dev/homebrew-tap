@@ -1,16 +1,16 @@
 class Devhub < Formula
   desc "Multi-project development environment manager"
   homepage "https://github.com/moinsen-dev/devhub"
-  version "0.3.1"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/moinsen-dev/devhub/releases/download/v0.3.1/devhub-aarch64-apple-darwin.tar.gz"
-      sha256 "78d8ba34b7ee85b7841e1561c10e47bdecb0d0edefde883ee03a4095a7b60578"
+      url "https://github.com/moinsen-dev/devhub/releases/download/v0.4.0/devhub-aarch64-apple-darwin.tar.gz"
+      sha256 "021402d3cf78849bba97e2b796795697a05f05c9cd2f440545065c28e959a9a3"
     else
-      url "https://github.com/moinsen-dev/devhub/releases/download/v0.3.1/devhub-x86_64-apple-darwin.tar.gz"
-      sha256 "1eebb27852fbf9bda25b37829627347f9273b9d307e36919d23c1ebd6c336de2"
+      url "https://github.com/moinsen-dev/devhub/releases/download/v0.4.0/devhub-x86_64-apple-darwin.tar.gz"
+      sha256 "2285772a567413bf84f812740ca94abedaf21544ece5c1f0dc85b805a9a97c65"
     end
   end
 
