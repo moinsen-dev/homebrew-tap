@@ -7,9 +7,34 @@ This repository contains Homebrew formulae for Moinsen Dev projects.
 ```bash
 brew tap moinsen-dev/tap
 brew install devhub
+brew install secretariat
 ```
 
 ## Available Formulae
+
+### secretariat
+
+Local-first secrets manager — one encrypted vault, all your API keys in one place.
+
+```bash
+brew install moinsen-dev/tap/secretariat
+```
+
+**Quickstart:**
+```bash
+secret init              # Create your vault
+secret set /prod/db-key  # Store a secret
+secret get /prod/db-key  # Retrieve a secret
+```
+
+**Features:**
+- AES-256-GCM encrypted vault via SQLCipher
+- macOS Keychain integration for master key
+- TCP daemon (`secd`) with auth-token authentication
+- Python, Dart, Node.js, and Rust SDKs
+- Import/export from `.env` files
+
+For more information, visit [secretariat.moinsen.dev](https://secretariat.moinsen.dev).
 
 ### devhub
 
