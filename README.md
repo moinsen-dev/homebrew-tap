@@ -8,6 +8,7 @@ This repository contains Homebrew formulae for Moinsen Dev projects.
 brew tap moinsen-dev/tap
 brew install devhub
 brew install secretariat
+brew install agentic-rc-mcp
 ```
 
 ## Available Formulae
@@ -70,3 +71,29 @@ devhub start myproject
 ```
 
 For more information, visit [DevHub on GitHub](https://github.com/moinsen-dev/devhub).
+
+### agentic-rc-mcp
+
+MCP server for non-invasive remote control + structured observability of long-running interactive local processes.
+
+```bash
+brew install moinsen-dev/tap/agentic-rc-mcp
+```
+
+**Features:**
+- PTY remote control: start, send keys, read screen, wait for patterns, resize, stop
+- Flutter/Dart-VM observability: auto-discover VM service, structured error/log streams, hot reload, read-only eval
+- 14 MCP tools, zero code changes in the controlled program
+
+**Usage:**
+```bash
+# Start as MCP stdio server (default)
+agentic-rc-mcp
+
+# CLI inspection
+agentic-rc-mcp --help
+agentic-rc-mcp --version
+agentic-rc-mcp --list-tools
+```
+
+For more information, visit [agentic-rc-mcp on GitHub](https://github.com/moinsen-dev/agentic_rc_cli).
