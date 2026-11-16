@@ -1,41 +1,27 @@
 # Homebrew Tap for Moinsen Dev
 
-This repository contains Homebrew formulae for Moinsen Dev projects.
+This repository contains Homebrew formulae and casks for Moinsen Dev projects.
 
 ## Installation
 
 ```bash
 brew tap moinsen-dev/tap
 brew install devhub
-brew install secretariat
+brew install --cask secretariat
 brew install agentic-rc-mcp
 ```
 
-## Available Formulae
+## Available Formulae and Casks
 
-### secretariat
+### secretariat (cask)
 
-Local-first secrets manager — one encrypted vault, all your API keys in one place.
+Mac app and command line tool that keeps API keys for coding agents. Claude Code, Codex and other agents start your programs through `secretariat run`; the program gets the values, the agent sees `[masked]`.
 
 ```bash
-brew install moinsen-dev/tap/secretariat
+brew install --cask moinsen-dev/tap/secretariat
 ```
 
-**Quickstart:**
-```bash
-secret init              # Create your vault
-secret set /prod/db-key  # Store a secret
-secret get /prod/db-key  # Retrieve a secret
-```
-
-**Features:**
-- AES-256-GCM encrypted vault via SQLCipher
-- macOS Keychain integration for master key
-- TCP daemon (`secd`) with auth-token authentication
-- Python, Dart, Node.js, and Rust SDKs
-- Import/export from `.env` files
-
-For more information, visit [secretariat.moinsen.dev](https://secretariat.moinsen.dev).
+The cask installs `Secretariat.app` and links `secretariat` into your PATH. The app updates itself (Sparkle). 14 days to try everything, then a license. More: [secretariat.moinsen.dev](https://secretariat.moinsen.dev).
 
 ### devhub
 
