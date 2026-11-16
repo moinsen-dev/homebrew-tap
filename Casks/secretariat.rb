@@ -13,7 +13,7 @@ cask "secretariat" do
   end
 
   auto_updates true
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Secretariat.app"
   binary "#{appdir}/Secretariat.app/Contents/MacOS/Secretariat", target: "secretariat"
