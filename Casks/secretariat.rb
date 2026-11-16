@@ -1,6 +1,6 @@
 cask "secretariat" do
-  version "1.20.0"
-  sha256 "1cb14e85dad550b13af44b2fe847468f2dd1dae16a3fbdde9da261e213fcd757"
+  version "1.21.0"
+  sha256 "a18b957059339666b51d113995a60319e5b5c033ed00635de0eb405a9cdabc44"
 
   url "https://secretariat.moinsen.dev/Secretariat-#{version}.zip"
   name "Secretariat"
